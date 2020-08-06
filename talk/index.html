@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <title>697 SLM ICU</title> 
+  <style type="text/css">
+		body {background-color: #DEE1E6}
+		.center
+		{
+		margin:1000px 5px 15px 20px;
+		width:40%;
+		}
+	</style> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+ 
+ </head> 
+ <body>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+        clientID: 'dce9349eb47218da2ab1',
+        clientSecret: '61dff068e448f2595106fc83cfe8dcadfeb9aa14',
+        repo: 'woshixxx',
+        owner: 'woshoxxx',
+        admin: ['woshoxxx', '697slmicu'],
+        id: 'gitalk-container',      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false,  // Facebook-like distraction free mode
+        createIssueManually: true
+        })
+        gitalk.render('gitalk-container')
+    </script> 
+</body>
