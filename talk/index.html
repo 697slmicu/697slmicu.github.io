@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <title>在线聊天室</title> 
+  <style type="text/css">
+		body {background-color: #DEE1E6}
+		.center
+		{
+		margin:auto;
+		width:40%;
+		}
+	</style> 
+  <link rel="stylesheet" type="text/css" href="./static/animate.min.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+ </head> 
+ <body>
+    <div class="center"> 
+        <img class="shrimp" src="Logo.png" alt="Logo" /> 
+        <div class="nava rt overf"> 
+         <a class="whitelink" href="">首页</a> | 
+         <a class="whitelink" href="./truth/">真相</a> | 
+         <a class="whitelink" href="./list/">697 List</a> | 
+         <a href="https://bbs.697slm.icu/"> 论坛</a> |
+         <a href="./talk/"> 在线聊天室</a> |
+    </div> 
+     <p>我们无法保证聊天内容的合法性和真实性，请自行判断</p>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+        clientID: 'dce9349eb47218da2ab1',
+        clientSecret: '61dff068e448f2595106fc83cfe8dcadfeb9aa14',
+        repo: 'woshixxx',
+        owner: 'woshoxxx',
+        admin: ['woshoxxx', '697slmicu'],
+        id: 'gitalk-container',      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false,  // Facebook-like distraction free mode
+        createIssueManually: true
+        })
+        gitalk.render('gitalk-container')
+    </script> 
+</body>
+</html>
